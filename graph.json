@@ -1,0 +1,8 @@
+graph LR
+      LB[Load Balancer] -- route1 --> web1
+      LB[Load Balancer] --> web2
+      web1 --> ${app}(fa:fa-check ${app})
+      web1 ==> app2
+      web2 ==> app2(fa:fa-ban app2)
+      web2 --> ${app}
+      app1 --> D[(database)]
